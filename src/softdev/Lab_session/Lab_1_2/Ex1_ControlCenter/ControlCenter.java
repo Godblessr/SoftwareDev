@@ -3,9 +3,9 @@ package softdev.Lab_session.Lab_1_2.Ex1_ControlCenter;
 import java.util.ArrayList;
 
 public class ControlCenter {
-    private final String name;
-    private final ArrayList<Sensor> SensorList;
-    private final Size size;
+    private String name;
+    private ArrayList<Sensor> SensorList;
+    private Size size;
 
     public ControlCenter(String name, Size size) {
         this.name = name;
@@ -17,11 +17,11 @@ public class ControlCenter {
         boolean flag = false;
         for (Sensor s : SensorList) {
             if (s.getType().equals(S.getType()) && s.getLocation().equals(S.getLocation())
-                    && s.getManufacturer().equals(S.getManufacturer()) && S.getActivateState()) {
+                    && s.getManufacturer().equals(S.getManufacturer())) {
                 flag = true;
             }
         }
-        if (flag) {
+        if (flag==false) {
             SensorList.add(S);
         }
 
@@ -31,17 +31,20 @@ public class ControlCenter {
         int num = 0;
         for (Sensor s : SensorList) {
             if (s.getActivateState()) {
-                num++;
+                    num++;
+                    s.alarm();
+                }
             }
-        }
-        return num;
+        System.out.println("Number of active senses: "+num);
+            return num;
     }
 
     public int testSensor(Sensor s) {
-        int index = 1;
+        int index = 0;
         for (Sensor a : SensorList) {
             if (s.getType().equals(a.getType()) && s.getLocation().equals(a.getLocation())
-                    && s.getManufacturer().equals(a.getManufacturer()) && s.getActivateState()) {
+                    && s.getManufacturer().equals(a.getManufacturer())) {
+                s.alarm();
                 return index;
             } else {
                 index++;
@@ -52,5 +55,9 @@ public class ControlCenter {
 
     public void overview() {
         System.out.println("Overview of all sensors @ Campus Groep T (" + size + ")");
-    }
+        for (Sensor s: SensorList){
+                System.out.println(s.toString());
+            }
+        }
+
 }

@@ -48,5 +48,16 @@ public class Sensor {
         System.out.println("Alarm in" + type + "sensor" + location + "(" +
                 manufacturer + ")");
     }
+
+    @Override
+    public String toString() {
+        String state= "inactive";
+        if(activateState){
+            state="active";
+        }
+        String str = "Info of " + state + " sensor (type = " + type + "), " +
+                "from " + manufacturer + " located at " + location;
+        return str;
+    }
 }
 
