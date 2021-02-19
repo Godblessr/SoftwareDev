@@ -1,7 +1,7 @@
 package softdev.Part2_inheritance.demo;
 
 public class Student extends Person {
-    private String school;
+    private final String school;
 
     public Student(String name, String school) {
         super(name);

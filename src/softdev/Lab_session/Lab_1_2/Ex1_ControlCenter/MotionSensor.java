@@ -4,17 +4,32 @@ public class MotionSensor extends Sensor {
     private float triggerdistance;
 
     public MotionSensor(String type, String location, String manufacturer, float triggerdistance) {
-        super(type,location,manufacturer);
+        super(type, location, manufacturer);
         this.triggerdistance = triggerdistance;
     }
-    @Override
-    public void alarm(){
-        System.out.println("Police are being contacted and siren is sounding");
+
+    public void setTriggerdistance(float triggerdistance) {
+        this.triggerdistance = triggerdistance;
+    }
+
+    public float getTriggerdistance() {
+        return triggerdistance;
     }
 
     @Override
+    public void alarm() {
+        System.out.println("Police are being contacted and siren is sounding");
+    }
+    @Override
     public String toString() {
-        return "with an active radius of " + triggerdistance +'m';
+        String state= "inactive";
+        if(activateState){
+            state="active";
+        }
+        String str = "Info of " + state + " sensor (type = " + type + "), " +
+                "from " + manufacturer + " located at " + location+
+                " with an active radius of " + triggerdistance + 'm';
+        return str;
     }
 }
 

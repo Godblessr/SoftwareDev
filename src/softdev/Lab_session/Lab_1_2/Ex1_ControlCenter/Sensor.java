@@ -1,10 +1,10 @@
 package softdev.Lab_session.Lab_1_2.Ex1_ControlCenter;
 
 public class Sensor {
-    private String type;
-    private String location;
-    private String manufacturer;
-    private boolean activateState = false;
+    protected String type;
+    protected String location;
+    protected String manufacturer;
+    protected boolean activateState = false;
 
     public Sensor(String type, String location, String manufacturer) {
         this.type = type;
@@ -40,20 +40,13 @@ public class Sensor {
         return activateState;
     }
 
-    public void setActivateState(boolean activateState) {
-        this.activateState = activateState;
+    public void setActivate() {
+        activateState = true;
     }
 
     public void alarm() {
         System.out.println("Alarm in" + type + "sensor" + location + "(" +
                 manufacturer + ")");
-    }
-
-    public String toString() {
-        String state = String.valueOf(activateState);
-        String str = "Info of " + state + " sensor (type = " + type+ "), " +
-                "from "+ manufacturer+ " located at " + location;
-        return str;
     }
 }
 
