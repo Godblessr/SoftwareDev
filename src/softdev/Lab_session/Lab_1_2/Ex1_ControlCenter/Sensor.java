@@ -45,9 +45,15 @@ public class Sensor {
     }
 
     public void alarm() {
-        System.out.println("Alarm in" + type + "sensor" + location + "(" + manufacturer + ")");
+        System.out.println("Alarm in" + type + "sensor" + location + "(" +
+                manufacturer + ")");
     }
 
-
+    public String toString() {
+        String state = String.valueOf(activateState);
+        String str = "Info of " + state + " sensor (type = " + type+ "), " +
+                "from "+ manufacturer+ " located at " + location;
+        return str;
+    }
 }
 
