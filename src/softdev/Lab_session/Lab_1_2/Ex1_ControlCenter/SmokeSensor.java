@@ -5,9 +5,19 @@ public class SmokeSensor extends Sensor {
 
     public SmokeSensor(String type, String location, String manufacturer, float minConcentration) {
         super(type,location,manufacturer);
-
         this.minConcentration = minConcentration;
     }
 
+    @Override
+    public void alarm(){
+        System.out.println("Windows are being closed and siren is sounding");
+    }
+
+    @Override
+    public String toString() {
+        return "SmokeSensor{" +
+                "minConcentration=" + minConcentration +
+                '}';
+    }
 }
 
