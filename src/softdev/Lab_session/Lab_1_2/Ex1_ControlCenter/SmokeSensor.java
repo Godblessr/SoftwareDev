@@ -1,11 +1,19 @@
 package softdev.Lab_session.Lab_1_2.Ex1_ControlCenter;
 
 public class SmokeSensor extends Sensor {
-    private final float minConcentration;
+    private boolean smokeOnly;
 
-    public SmokeSensor(String type, String location, String manufacturer, float minConcentration) {
+    public SmokeSensor(String type, String location, String manufacturer, boolean smokeOnly) {
         super(type,location,manufacturer);
-        this.minConcentration = minConcentration;
+        this.smokeOnly = smokeOnly;
+    }
+
+    public void setSmokeOnly(boolean smokeOnly) {
+        this.smokeOnly = smokeOnly;
+    }
+
+    public boolean getSmokeOnly() {
+        return smokeOnly;
     }
 
     @Override
@@ -15,9 +23,7 @@ public class SmokeSensor extends Sensor {
 
     @Override
     public String toString() {
-        return "SmokeSensor{" +
-                "minConcentration=" + minConcentration +
-                '}';
+        return "smokeOnly" +"=" + String.valueOf(smokeOnly);
     }
 }
 

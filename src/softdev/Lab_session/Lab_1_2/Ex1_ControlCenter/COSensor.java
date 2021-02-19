@@ -15,5 +15,14 @@ public class COSensor extends Sensor {
         this.minConcentration = minConcentration;
     }
 
+    @Override
+    public void alarm(){
+        System.out.println("Windows are being open and siren is sounding");
+    }
+
+    @Override
+    public String toString() {
+        return "with a minimal CO concentration of " + minConcentration;
+    }
 }
 
