@@ -4,11 +4,7 @@ public class SmokeSensor extends Sensor {
     private boolean smokeOnly;
 
     public SmokeSensor(String type, String location, String manufacturer, boolean smokeOnly) {
-        super(type,location,manufacturer);
-        this.smokeOnly = smokeOnly;
-    }
-
-    public void setSmokeOnly(boolean smokeOnly) {
+        super(type, location, manufacturer);
         this.smokeOnly = smokeOnly;
     }
 
@@ -16,14 +12,18 @@ public class SmokeSensor extends Sensor {
         return smokeOnly;
     }
 
+    public void setSmokeOnly(boolean smokeOnly) {
+        this.smokeOnly = smokeOnly;
+    }
+
     @Override
-    public void alarm(){
+    public void alarm() {
         System.out.println("Windows are being closed and siren is sounding");
     }
 
     @Override
     public String toString() {
-        return "smokeOnly" +"=" + String.valueOf(smokeOnly);
+        return "smokeOnly" + "=" + String.valueOf(smokeOnly);
     }
 }
 
