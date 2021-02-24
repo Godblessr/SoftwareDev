@@ -22,13 +22,7 @@ public class COSensor extends Sensor {
 
     @Override
     public String toString() {
-        String state= "inactive";
-        if(activateState){
-            state="active";
-        }
-        String str = "Info of " + state + " sensor (type = " + type + "), " +
-                "from " + manufacturer + " located at " + location+
-                " with a minimal CO concentration of " + minConcentration;
+         String str = super.toString() + " with a minimal CO concentration of " + minConcentration;
         return str;
     }
 }

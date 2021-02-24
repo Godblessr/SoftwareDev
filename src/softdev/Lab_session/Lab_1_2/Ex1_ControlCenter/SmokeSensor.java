@@ -23,13 +23,7 @@ public class SmokeSensor extends Sensor {
 
     @Override
     public String toString() {
-        String state= "inactive";
-        if(activateState){
-            state="active";
-        }
-        String str = "Info of " + state + " sensor (type = " + type + "), " +
-                "from " + manufacturer + " located at " + location+
-         " smokeOnly" + "=" + String.valueOf(smokeOnly);
+        String str = super.toString() + " smokeOnly" + "=" + String.valueOf(smokeOnly);
         return str;
     }
 }

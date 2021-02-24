@@ -22,13 +22,7 @@ public class MotionSensor extends Sensor {
     }
     @Override
     public String toString() {
-        String state= "inactive";
-        if(activateState){
-            state="active";
-        }
-        String str = "Info of " + state + " sensor (type = " + type + "), " +
-                "from " + manufacturer + " located at " + location+
-                " with an active radius of " + triggerdistance + 'm';
+        String str = super.toString() + " with an active radius of " + triggerdistance + 'm';
         return str;
     }
 }

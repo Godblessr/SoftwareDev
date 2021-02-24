@@ -161,7 +161,7 @@ public class Myshape {
     private void draw()
     {
         if(isVisible) {
-            java.awt.Canvas canvas = java.awt.Canvas.getCanvas();
+            Canvas canvas = Canvas.getCanvas();
             int[] xpoints = { xPosition, xPosition + (width/2), xPosition - (width/2) };
             int[] ypoints = { yPosition, yPosition + height, yPosition + height };
             canvas.draw(this, color, new Polygon(xpoints, ypoints, 3));

@@ -29,7 +29,7 @@ public class Triangle extends Myshape
     }
     public void changeSize(int newHeight, int newWidth)
     {
-        erase();
+        super.erase();
         height = newHeight;
         width = newWidth;
         draw();

@@ -31,7 +31,7 @@ public class Square extends Myshape
      */
     public void changeSize(int newSize)
     {
-        erase();
+        super.erase();
         size = newSize;
         draw();
     }
