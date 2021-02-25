@@ -12,11 +12,11 @@ import java.util.ArrayList;
  */
 public class MessagePost 
 {
-    private String username;  // username of the post's author
-    private String message;   // an arbitrarily long, multi-line message
-    private long timestamp;
+    private final String username;  // username of the post's author
+    private final String message;   // an arbitrarily long, multi-line message
+    private final long timestamp;
     private int likes;
-    private ArrayList<String> comments;
+    private final ArrayList<String> comments;
 
     /**
      * Constructor for objects of class MessagePost.

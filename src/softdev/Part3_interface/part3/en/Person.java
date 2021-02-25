@@ -1,7 +1,7 @@
-package be.kuleuven.groept.softdev.part3.en;
+package softdev.Part3_interface.part3.en;
 
 public class Person implements BePolite {
-    private String name;
+    private final String name;
 
     public Person(String name) {
         this.name = name;

@@ -1,8 +1,8 @@
-package be.kuleuven.groept.softdev.part3.en;
+package softdev.Part3_interface.part3.en;
 
 public class Student extends Person implements StudentBehaviour {
 
-    private String university;
+    private final String university;
 
     public Student(String name, String university) {
         super(name);

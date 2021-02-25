@@ -11,12 +11,12 @@ import java.util.ArrayList;
  * @version 0.1
  */
 public class PhotoPost {
-    private String username;  // username of the post's author
-    private String filename;  // the name of the image file
-    private String caption;   // a one line image caption
-    private long timestamp;
+    private final String username;  // username of the post's author
+    private final String filename;  // the name of the image file
+    private final String caption;   // a one line image caption
+    private final long timestamp;
     private int likes;
-    private ArrayList<String> comments;
+    private final ArrayList<String> comments;
 
     /**
      * Constructor for objects of class PhotoPost.

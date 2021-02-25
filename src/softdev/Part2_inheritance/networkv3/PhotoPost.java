@@ -12,8 +12,8 @@ import java.util.ArrayList;
  */
 public class PhotoPost extends Post
 {
-    private String filename;  // the name of the image file
-    private String caption;   // a one line image caption
+    private final String filename;  // the name of the image file
+    private final String caption;   // a one line image caption
 
     /**
      * Constructor for objects of class PhotoPost.

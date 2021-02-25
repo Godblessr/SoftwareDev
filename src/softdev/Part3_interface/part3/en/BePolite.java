@@ -1,4 +1,4 @@
-package be.kuleuven.groept.softdev.part3.en;
+package softdev.Part3_interface.part3.en;
 
 @FunctionalInterface
 public interface BePolite {

@@ -1,4 +1,5 @@
-package be.kuleuven.groept.softdev.part3.demo;
+package softdev.Part3_interface.part3.demo;
+
 
 import javax.swing.*;
 import java.awt.*;
@@ -6,7 +7,7 @@ import java.awt.geom.Ellipse2D;
 
 public class MarsIcon implements Icon {
 
-    private int size;
+    private final int size;
 
     public MarsIcon(int size) {
         this.size = size;

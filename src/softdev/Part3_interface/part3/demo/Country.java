@@ -1,9 +1,10 @@
-package be.kuleuven.groept.softdev.part3.demo;
+package softdev.Part3_interface.part3.demo;
+
 
 public class Country implements Comparable<Country> {
-    private String name;
-    private int area;
-    private long population;
+    private final String name;
+    private final int area;
+    private final long population;
 
     public Country(String name, int area, long population) {
         this.name = name;

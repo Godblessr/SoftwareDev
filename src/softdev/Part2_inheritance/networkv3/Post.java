@@ -12,10 +12,10 @@ import java.util.ArrayList;
  */
 public abstract class Post // should not be instantiated
 {
-    private String username;  // username of the post's author
-    private long timestamp;
+    private final String username;  // username of the post's author
+    private final long timestamp;
     private int likes;
-    private ArrayList<String> comments;
+    private final ArrayList<String> comments;
 
     /**
      * Constructor for objects of class Post.

@@ -1,4 +1,5 @@
-package be.kuleuven.groept.softdev.part3.demo;
+package softdev.Part3_interface.part3.demo;
+
 
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;

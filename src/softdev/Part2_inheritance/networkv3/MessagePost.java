@@ -12,7 +12,7 @@ import java.util.ArrayList;
  */
 public class MessagePost extends Post
 {
-    private String message;  // an arbitrarily long, multi-line message
+    private final String message;  // an arbitrarily long, multi-line message
 
     /**
      * Constructor for objects of class MessagePost.

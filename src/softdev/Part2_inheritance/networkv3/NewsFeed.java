@@ -17,7 +17,7 @@ import java.util.ArrayList;
  */
 public class NewsFeed
 {
-    private ArrayList<Post> posts;
+    private final ArrayList<Post> posts;
 
     /**
      * Construct an empty news feed.
