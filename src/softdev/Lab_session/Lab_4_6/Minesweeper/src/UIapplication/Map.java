@@ -1,4 +1,4 @@
-package softdev.Lab_session.Lab_4_6.Minesweeper.Application;
+package softdev.Lab_session.Lab_4_6.Minesweeper.UIapplication;
 
 import java.util.ArrayList;
 
@@ -30,5 +30,9 @@ public class Map {
 
     public void addBlock(Block block) {
         BlockChain.add(block);
+    }
+
+    public void generateMine(){
+
     }
 }

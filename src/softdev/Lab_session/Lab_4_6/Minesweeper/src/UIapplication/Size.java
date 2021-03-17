@@ -1,4 +1,4 @@
-package softdev.Lab_session.Lab_4_6.Minesweeper.Application;
+package softdev.Lab_session.Lab_4_6.Minesweeper.UIapplication;
 
 public class Size {
     private int column;

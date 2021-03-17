@@ -6,6 +6,8 @@
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/src/softdev/Lab_session/Lab_1_2/Ex2_shapes/shapes" />
       <excludeFolder url="file://$MODULE_DIR$/src/softdev/Part4_collections/part4" />
+      <excludeFolder url="file://$MODULE_DIR$/src/softdev/Lab_session/Lab_4_6/Minesweeper/view/javafx" />
+      <excludeFolder url="file://$MODULE_DIR$/src/softdev/Lab_session/Lab_4_6/Minesweeper/Application" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
