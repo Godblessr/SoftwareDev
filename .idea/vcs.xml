@@ -3,5 +3,10 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/src/softdev/Lab_session/Lab_4_6/Minesweeper" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/softdev/Lab_session/Lab_4_6/aaa" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/softdev/Lab_session/Lab_4_6/bbb" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/softdev/Lab_session/Lab_7_12/E-Bill" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/softdev/Lab_session/Lab_7_12/EBill" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/softdev/Lab_session/Lab_7_12/sd-2020-x06" vcs="Git" />
   </component>
 </project>
