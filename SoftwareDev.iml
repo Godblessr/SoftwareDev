@@ -8,7 +8,6 @@
       <excludeFolder url="file://$MODULE_DIR$/src/softdev/Part4_collections/part4" />
       <excludeFolder url="file://$MODULE_DIR$/src/softdev/Lab_session/Lab_4_6/Minesweeper/view/javafx" />
       <excludeFolder url="file://$MODULE_DIR$/src/softdev/Lab_session/Lab_4_6/Minesweeper/Application" />
-      <excludeFolder url="file://$MODULE_DIR$/src/softdev/Lab_session" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
