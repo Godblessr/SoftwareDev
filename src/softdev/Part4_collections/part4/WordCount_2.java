@@ -1,4 +1,4 @@
-package be.kuleuven.groept.softdev.part4.exercises;
+package softdev.Part4_collections.part4;
 
 import java.util.Objects;
 
