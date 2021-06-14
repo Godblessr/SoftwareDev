@@ -8,5 +8,6 @@ public class Demo {
 //
         Person p2 = new Student("Marie", "KU Leuven Campus Groep T");
         System.out.println(p2.toString());
+        System.out.println(p1.toString());
     }
 }
