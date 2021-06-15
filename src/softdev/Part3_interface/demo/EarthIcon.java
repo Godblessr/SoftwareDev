@@ -22,4 +22,7 @@ public class EarthIcon implements Icon {
     public int getIconHeight() {
         return 100;
     }
+
+    public void blablabla() {
+    }
 }

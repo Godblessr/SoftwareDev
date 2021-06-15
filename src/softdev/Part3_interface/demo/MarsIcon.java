@@ -1,4 +1,4 @@
-package softdev.Part3_interface.part3.demo;
+package softdev.Part3_interface.demo;
 
 
 import javax.swing.*;
