@@ -1,4 +1,4 @@
-package softdev.Part3_interface.demo;
+package softdev.Part3_interface.demo.countries;
 
 
 import java.util.*;
@@ -22,7 +22,7 @@ public class CoutrySortTester {
             }
         });
         printCountries(countries, "countries by population");
-        countries.sort((c1,c2) -> -Long.valueOf(c1.getPopulation()).compareTo(Long.valueOf(c2.getPopulation())));
+        countries.sort((c1, c2) -> -Long.valueOf(c1.getPopulation()).compareTo(Long.valueOf(c2.getPopulation())));
         printCountries(countries, "countries by population (lambda)");
 
 

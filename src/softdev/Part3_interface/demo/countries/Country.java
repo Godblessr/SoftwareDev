@@ -1,4 +1,4 @@
-package softdev.Part3_interface.demo;
+package softdev.Part3_interface.demo.countries;
 
 
 public class Country implements Comparable<Country> {

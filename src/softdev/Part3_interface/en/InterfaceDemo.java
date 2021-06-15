@@ -21,12 +21,8 @@ public class InterfaceDemo {
 
         BePolite aPerson = new Person("Mia");
         System.out.println(aPerson.sayThankyou());
-        BePolite lars = new BePolite() { // anonymous inner class
-            @Override
-            public String sayThankyou() {
-                return "Tak!";
-            }
-        };
+        // anonymous inner class
+        BePolite lars = () -> "Tak!";
 
         BePolite portugesePerson = () -> "Obrigado";
 
@@ -36,12 +32,7 @@ public class InterfaceDemo {
         bepolites.add(aPerson);
         bepolites.add(marcel);
         bepolites.add(lars);
-        bepolites.add(new BePolite() {
-            @Override
-            public String sayThankyou() {
-                return "Gracias";
-            }
-        });
+        bepolites.add(() -> "Gracias");
         bepolites.add(portugesePerson);
 
 
