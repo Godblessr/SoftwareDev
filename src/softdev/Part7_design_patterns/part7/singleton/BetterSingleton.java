@@ -1,4 +1,4 @@
-package be.kuleuven.groept.softdev.part7.singleton;
+package softdev.Part7_design_patterns.part7.singleton;
 
 
 public enum BetterSingleton {

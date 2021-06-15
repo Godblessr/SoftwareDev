@@ -23,7 +23,10 @@ public class InterfaceVSConcreteImplemenation {
         myList.add(0, "An");
         myList.add(0, "Wang");
 
+        ((LinkedList) myList).addFirst("Ji");
+
         System.out.println(myList);
+        System.out.println(((LinkedList)myList).getLast());
 //		myList.add("Jeff");
 //		myList.get(0);
 //		myList.get(myList.size() - 1);
@@ -33,6 +36,7 @@ public class InterfaceVSConcreteImplemenation {
 //		//myList.getLast();
 //		System.out.println(myList.get(myList.size()-1));
 //		System.out.println(myList instanceof LinkedList);
+
     }
 
 }

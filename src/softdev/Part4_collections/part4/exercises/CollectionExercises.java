@@ -1,7 +1,5 @@
 package softdev.Part4_collections.part4.exercises;
 
-import softdev.Part4_collections.part4.CollectionExercises_2;
-
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.*;

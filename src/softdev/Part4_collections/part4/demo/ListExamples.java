@@ -11,8 +11,8 @@ public class ListExamples {
     }
 
     private void go() {
-        List<String> myList1 = null, myList2 = null, myList3 = null;
-        List<Integer> myList4 = null;
+        List<String> myList1, myList2, myList3;
+        List<Integer> myList4;
         // sort
         myList3 = initList3();
         System.out.println("myList3: "  + myList3);

@@ -1,0 +1,57 @@
+@startuml
+class softdev.Part3_interface.demo.icon.MyIcon2 {
++ void paintIcon(Component,Graphics,int,int)
++ int getIconWidth()
++ int getIconHeight()
+}
+class softdev.Part3_interface.demo.icon.MyIcon {
++ void paintIcon(Component,Graphics,int,int)
++ int getIconWidth()
++ int getIconHeight()
+}
+class softdev.Part3_interface.demo.icon.MarsIcon {
+- int size
++ <<Create>> MarsIcon(int)
++ <<Create>> MarsIcon()
++ void paintIcon(Component,Graphics,int,int)
++ int getIconWidth()
++ int getIconHeight()
+}
+class softdev.Part3_interface.demo.icon.Moonicon {
++ void paintIcon(Component,Graphics,int,int)
++ int getIconWidth()
++ int getIconHeight()
+}
+class softdev.Part3_interface.demo.icon.EarthIcon {
++ void paintIcon(Component,Graphics,int,int)
++ int getIconWidth()
++ int getIconHeight()
++ void blablabla()
+}
+class softdev.Part3_interface.demo.icon.IconInterfaceDemo {
++ {static} void main(String[])
+}
+class softdev.Part3_interface.demo.icon.MouseListenerDemo2 {
++ void mouseClicked(MouseEvent)
++ void mousePressed(MouseEvent)
++ void mouseReleased(MouseEvent)
++ void mouseEntered(MouseEvent)
++ void mouseExited(MouseEvent)
+}
+class softdev.Part3_interface.demo.icon.MouseListenerDemo {
++ void mouseClicked(MouseEvent)
++ void mousePressed(MouseEvent)
++ void mouseReleased(MouseEvent)
++ void mouseEntered(MouseEvent)
++ void mouseExited(MouseEvent)
+}
+
+
+softdev.Part3_interface.demo.icon.Icon <|.. softdev.Part3_interface.demo.icon.MyIcon2
+softdev.Part3_interface.demo.icon.Icon <|.. softdev.Part3_interface.demo.icon.MyIcon
+softdev.Part3_interface.demo.icon.Icon <|.. softdev.Part3_interface.demo.icon.MarsIcon
+softdev.Part3_interface.demo.icon.Icon <|.. softdev.Part3_interface.demo.icon.Moonicon
+softdev.Part3_interface.demo.icon.Icon <|.. softdev.Part3_interface.demo.icon.EarthIcon
+java.awt.event.MouseListener <|.. softdev.Part3_interface.demo.icon.MouseListenerDemo2
+java.awt.event.MouseListener <|.. softdev.Part3_interface.demo.icon.MouseListenerDemo
+@enduml

@@ -1,0 +1,25 @@
+@startuml
+class softdev.Part3_interface.demo.countries.Country {
+- String name
+- int area
+- long population
++ <<Create>> Country(String,int,long)
++ String getName()
++ int getArea()
++ long getPopulation()
++ String toString()
++ int compareTo(Country)
+}
+class softdev.Part3_interface.demo.countries.AreaComparator {
++ int compare(Country,Country)
+}
+class softdev.Part3_interface.demo.countries.CoutrySortTester {
++ {static} void main(String[])
+- {static} ArrayList<Country> initCountries()
+- {static} void printCountries(List<Country>,String)
+}
+
+
+softdev.Part3_interface.demo.countries.Comparable <|.. softdev.Part3_interface.demo.countries.Country
+java.util.Comparator <|.. softdev.Part3_interface.demo.countries.AreaComparator
+@enduml

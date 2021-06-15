@@ -29,16 +29,12 @@ public class Person implements Comparable<Person> {
 
     @Override
     public String toString() {
-        return "Person [name=" + name + ", weight=" + weight + ", sexe=" + gender + "]";
+        return "Person [name=" + name + ", weight=" + weight + ", sex=" + gender + "]";
     }
 
     @Override
     public int compareTo(Person person) {
-        if (getWeight() > person.getWeight())
-            return 1;
-        else if (getWeight() < person.getWeight())
-            return -1;
-        else
-            return 0;
+        return Double.compare(getWeight(), person.getWeight());
+
     }
 }

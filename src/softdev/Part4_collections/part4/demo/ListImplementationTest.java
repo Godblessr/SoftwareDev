@@ -16,13 +16,12 @@ public class ListImplementationTest {
 	 * Tests to show the list behavior: add, get, remove, insert.  
 	 * Two array list implementations (without and with initial capacity) and
 	 * a linked list implementation.
-	 * @param args
 	 */
 	public static void main(String[] args) {
 
-		test("test with ArrayList WITHOUT initial capacity", new ArrayList<String>());
-		test("test with ArrayList WITH initial capacity", new ArrayList<String>(NR_OF_ELEMENTS));
-		test("test with LinkedList", new LinkedList<String>());
+		test("test with ArrayList WITHOUT initial capacity", new ArrayList<>());
+		test("test with ArrayList WITH initial capacity", new ArrayList<>(NR_OF_ELEMENTS));
+		test("test with LinkedList", new LinkedList<>());
 		System.out.println("Done.");
 	}
 

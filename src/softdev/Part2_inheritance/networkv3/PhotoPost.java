@@ -65,4 +65,13 @@ public class PhotoPost extends Post
     public void handlePost() {
         System.out.println("I am handling a Photo post!");
     }
+
+    @Override
+    public String toString() {
+        return "PhotoPost{" +
+                "filename='" + filename + '\'' +
+                ", caption='" + caption + '\'' +
+                '}';
+    }
+
 }

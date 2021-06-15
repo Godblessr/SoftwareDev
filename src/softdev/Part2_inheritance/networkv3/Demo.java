@@ -16,5 +16,10 @@ public class Demo {
         mp.handlePost();
         mp = new PhotoPost("Mia", "World.jpeg", "Java rules the world!");
         mp.handlePost();
+
+        Post post = new MessagePost("Nobody","Java rules!");
+        System.out.println(post.toString()); //1
+        post = new PhotoPost("An", "world.jpg", "Hello world!");
+        System.out.println(post.toString()); //2
     }
 }

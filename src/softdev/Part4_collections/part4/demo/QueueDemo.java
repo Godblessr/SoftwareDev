@@ -8,9 +8,10 @@ public class QueueDemo {
         Queue<Integer> queue = new ArrayDeque<>(); // FIFO
 
         queue.add(10);
-        queue.offer(20);
+        Boolean b =queue.offer(20);
+        System.out.println(b);
         System.out.println(queue.peek()); //10
-
+        System.out.println(queue);
         Integer io = queue.remove();
         System.out.println(io); //10
         System.out.println(queue.element()); //20
