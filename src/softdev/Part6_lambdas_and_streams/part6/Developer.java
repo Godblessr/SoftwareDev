@@ -1,4 +1,4 @@
-package be.kuleuven.groept.softdev.part6;
+package softdev.Part6_lambdas_and_streams.part6;
 
 import java.util.*;
 import java.util.stream.Collectors;

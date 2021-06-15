@@ -1,5 +1,7 @@
 package softdev.Part4_collections.part4.exercises;
 
+import softdev.Part4_collections.part4.CollectionExercises_2;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.*;
@@ -7,7 +9,7 @@ import java.util.*;
 public class CollectionExercises {
 
     public static void main(String[] args) {
-        new CollectionExercises().go();
+        new CollectionExercises_2().go();
     }
 
     private void go() {

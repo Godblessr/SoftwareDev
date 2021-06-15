@@ -1,13 +1,9 @@
-package be.kuleuven.groept.softdev.part4.demo;
+package softdev.Part4_collections.part4.demo;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
-import java.util.stream.Collectors;
-import java.util.stream.IntStream;
-
-import static java.util.stream.Collectors.toList;
 
 public class ListExamples {
     public static void main(String[] args) {
@@ -30,7 +26,7 @@ public class ListExamples {
         // replaceAll
         myList4 = initList4();
         System.out.println("myList4: "  + myList4);
-        myList4.replaceAll(i -> i*i);
+        myList4.replaceAll(i -> i * i);
         System.out.println("\treplaceAll: " + myList4);
         // retainAll
         myList1 = initList1();

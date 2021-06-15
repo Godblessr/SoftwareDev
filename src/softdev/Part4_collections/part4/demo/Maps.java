@@ -1,4 +1,4 @@
-package be.kuleuven.groept.softdev.part4.demo;
+package softdev.Part4_collections.part4.demo;
 
 
 import java.util.*;
@@ -43,8 +43,7 @@ public class Maps {
 		System.out.println("*****");		
 		System.out.println("Iterate over the values");
 		Collection<String> myValues = phoneBook.values();
-		for (String myValue: myValues)
-			System.out.println(myValue);
+		myValues.forEach(System.out::println);
 		System.out.println("*****");		
 		System.out.println("Li: " + phoneBook.get("Li"));
 		System.out.println("Li does not exist (should return null): " + phoneBook.get("Li does not exist"));

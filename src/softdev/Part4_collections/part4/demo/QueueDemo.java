@@ -1,4 +1,4 @@
-package be.kuleuven.groept.softdev.part4.demo;
+package softdev.Part4_collections.part4.demo;
 
 import java.util.ArrayDeque;
 import java.util.Queue;

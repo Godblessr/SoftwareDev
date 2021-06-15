@@ -1,9 +1,9 @@
-package be.kuleuven.groept.softdev.part6.classDemoNL.ropepulling;
+package softdev.Part6_lambdas_and_streams.part6.ropepulling;
 
 public class Person implements Comparable<Person> {
-    private String name;
-    private double weight;
-    private Gender gender;
+    private final String name;
+    private final double weight;
+    private final Gender gender;
 
     public Person(String name, double weight, Gender gender) {
         this.name = name;
